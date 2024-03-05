@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
 }
 
 body {
@@ -16,12 +23,14 @@ body {
 }
 
 .card {
-    width: 150px;
-    height: 150px;
+    width: 14rem;
+    height: 14rem;
     position: relative;
 
     transform-style: preserve-3d;
     transition: transform 0.5s;
+
+    cursor: pointer;
 }
 
 .card-back, .card-front {
@@ -31,8 +40,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     backface-visibility: hidden;
 }
 
@@ -48,7 +57,7 @@ body {
 .card-back {
     color: #101c2c;
     background-color: #05c3ff;
-    font-size: 30px;
+    font-size: 3rem;
     
 }
 
@@ -59,7 +68,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    font-size: 50px;
+    font-size: 5rem;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -68,17 +77,17 @@ body {
 }
 
 #restart {
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
     background-color: yellow;
     border: none;
-    border-radius: 10px;
-    margin-top: 15px;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
 }
 
 #gameBoard {
-    max-width: 700px;
+    max-width: 70rem;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 2rem;
 }
